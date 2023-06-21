@@ -4,7 +4,7 @@
 /**
  * main - prints alphabet in lowercase,
  *	and then in uppercase,then a new line.
- * alp - character
+ * alp: character
  *
  * Return - Always 0
  */
