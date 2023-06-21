@@ -15,10 +15,10 @@ int main(void)
 
 	while (alp <= 'z')
 	{
-		putchar(alp);
 		if (alp == 'q' || alp == 'e')
-			alp++;
 			continue;
+		putchar(alp);
+		alp++;
 	}
 
 	return (0);
