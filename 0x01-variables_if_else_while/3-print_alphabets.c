@@ -6,7 +6,7 @@
  *	and then in uppercase,then a new line.
  * alp: character
  *
- * Return - Always 0
+ * Return: Always 0
  */
 
 int main(void)
