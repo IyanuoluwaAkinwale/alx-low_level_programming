@@ -21,7 +21,7 @@ int main(void)
 			putchar((numB / 10) + '0');
 			putchar((numB % 10) + '0');
 			if (numA == 98 || numB == 99)
-				break;
+				continue;
 			putchar(',');
 			putchar(' ');
 		}
