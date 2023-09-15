@@ -20,11 +20,10 @@ int main(void)
 			putchar(' ');
 			putchar((numB / 10) + '0');
 			putchar((numB % 10) + '0');
-			if (numA != 99 || numB != 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			if (numA == 99 || numB == 99)
+				break;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
