@@ -12,7 +12,7 @@ void print_rev(char *s)
 
 	/*to get length of string*/
 	while (s[i++])
-		len[i++];
+		len++;
 
 	/*to reverse string*/
 	for (i = len - 1; i >= 0; i--)
