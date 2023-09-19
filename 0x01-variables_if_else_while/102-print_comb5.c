@@ -12,18 +12,18 @@ int main(void)
 
 	for (numA = 0; numA < 100; numA++)
 	{
-		for (numB = numA; numB < 100; numB++)
+		for (numB = numA + 1; numB < 100; numB++)
 		{
 			putchar((numA / 10) + '0');
+			/*the '0' converts the answer to ascii character*/
 			putchar((numA % 10) + '0');
 			putchar(' ');
 			putchar((numB / 10) + '0');
 			putchar((numB % 10) + '0');
-			if (numA != 99 || numB != 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			if (numA == 98 && numB == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
