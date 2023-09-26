@@ -11,7 +11,11 @@ int _strcmp(char *s1, char *s2)
 {
         while (*s1 != '\0' || *s2 != '\0')
         {
+<<<<<<< HEAD
 		if (*s1 != *s2)
+=======
+                if (*s1 != *s2)
+>>>>>>> b89c55bccce954a61f41172602505e479c5f940c
                 {
                         return (*s1 - *s2);
                 }
