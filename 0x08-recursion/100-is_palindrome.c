@@ -35,11 +35,8 @@ int check_palindrome(char *s, int i)
 {
 	int length = _strlen_recursion(s);
 
-	if (length <= 1)
-                return (1);
-
-       /* if (s[i] == s[length / 2])
-                return (1);*/
+       /* if (s[i] == s[length / 2])*/
+	/* return (1);*/
 
         if (s[i] == s[length - 1 - i])
                 return (check_palindrome(s + 1, i + 1));
