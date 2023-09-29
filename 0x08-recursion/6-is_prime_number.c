@@ -1,25 +1,25 @@
 #include "main.h"
 
-int is_divisible(int num, int div);
+int prime_divisor(int num, int div);
 
 /**
- * is_divisible - Checks if a number is divisible.
+ * prime_divisor - Checks if a number is divisible.
  * @num: The number to be checked.
  * @div: The divisor.
  * Return: If the number is divisible - 0.
  */
 
-int is_divisible(int num, int div)
+int prime_divisor(int num, int div)
 {
 	if (div == 1)
 	{
 		return (1);
 	}
-	if (n % div == 0)
+	if (num % div == 0)
 	{
 		return (0);
 	}
-	return (is_divisible(num, div - 1));
+	return (prime_divisor(num, div - 1));
 }
 
 /**
@@ -36,5 +36,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (prime_divisor (n, divi2));
+	return (prime_divisor(n, divi2));
 }
