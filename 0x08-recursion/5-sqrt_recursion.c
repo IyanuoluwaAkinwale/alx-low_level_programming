@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
     {
         return n;
     }
-    return _sqrt_helper(n, 1);
+    return (_sqrt_helper(n, 1));
 }
 
 
@@ -36,11 +36,11 @@ int _find_sqrt(int num, int rt_guess)
 {
     if (rt_guess * rt_guess == num)
     {
-        return guess;
+        return (rt_guess);
     }
     if (rt_guess * rt_guess > num)
     {
-	    return -1;
+	    return (-1);
     }
-    return  _find_sqrt(num, rt_guess + 1);
+    return  (_find_sqrt(num, rt_guess + 1));
 }
