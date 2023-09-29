@@ -29,7 +29,8 @@ int _sqrt_recursion(int n)
  * @num: The number to find the square root of.
  * @rt_guess: The current guess for the square root.
  *
- * Return: The natural square root of num, or -1 if num does not have a natural square root.
+ * Return: The natural square root of num,
+ * or -1 if num does not have a natural square root.
  */
 
 int _find_sqrt(int num, int rt_guess)
