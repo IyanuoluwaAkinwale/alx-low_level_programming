@@ -32,7 +32,7 @@ int is_palindrome(char *s)
 		return (1);*/
 
 	if (s[i] == s[length - 1 - i])
-		return (is_palindrome(s + 1, i + 1));
+		return (is_palindrome(s + 1));
 
 	return 0;
 }
