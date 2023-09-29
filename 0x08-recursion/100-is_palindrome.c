@@ -4,7 +4,7 @@ int find_strlen(char *s);
 int check_palindrome(char *s, int i);
 
 /**
- * find_strlen - Returns the length of a string.
+ * strlen_recursion - Returns the length of a string.
  * @s: The string to be measured.
  *
  * Return: The length of the string.
@@ -38,10 +38,10 @@ int check_palindrome(char *s, int i)
        /* if (s[i] == s[length / 2])*/
 	/* return (1);*/
 
-        if (s[i] == s[length - 1 - i])
-                return (check_palindrome(s + 1, i + 1));
+	if (s[i] == s[length - 1 - i])
+		return (check_palindrome(s + 1, i + 1));
 
-	return 0;
+	return (0);
 }
 
 /**
