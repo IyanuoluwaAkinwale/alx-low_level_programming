@@ -16,9 +16,13 @@ unsigned int _strspn(char *s, char *accept)
 		if (*s == *accept)
 		{
 			count++;
+			s++;
+			accept++;
 		}
-		s++;
-		accept++;
+		else
+		{
+			break;
+		}
 	}
 	return (count);
 }
