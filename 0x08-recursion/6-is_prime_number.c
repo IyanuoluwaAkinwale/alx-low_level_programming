@@ -31,7 +31,7 @@ int prime_divisor(int num, int div)
 int is_prime_number(int n)
 {
 	int divi2 = n / 2;
-	
+
 	if (n < 2)
 	{
 		return (0);
