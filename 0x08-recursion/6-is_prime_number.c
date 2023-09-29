@@ -21,7 +21,7 @@ int is_divisible(int num, int div)
 		return (1);
 
 	}
-	return (is_divisible(num, div + 1));
+	return (is_divisible(num, div - 1));
 }
 
 /**
@@ -32,7 +32,7 @@ int is_divisible(int num, int div)
 
 int is_prime_number(int n)
 {
-	int v = 2;
+	int v = 9;
 
 	if (n <= 1)
 	{
