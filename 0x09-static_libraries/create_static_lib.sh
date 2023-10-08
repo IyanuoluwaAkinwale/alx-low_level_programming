@@ -1,12 +1,7 @@
 #!/bin/bash
 
-# Find all .c files in the current directory
-c_files=$(find . -maxdepth 1 -type f -name "*.c")
-
-# Compile .c files into object files
-for file in $c_files; do
-    gcc -c $file
-done
+# Find all .c files in the current directory and compile them into object files
+gcc -c *.c
 
 # Create a static library from the object files
 ar rcs liball.a *.o
