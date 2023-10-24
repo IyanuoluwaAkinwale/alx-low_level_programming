@@ -9,7 +9,8 @@
  *
  * Return: 1 if it succeeded, -1 if it failed.
  */
-[Iint delete_nodeint_at_index(listint_t **head, unsigned int index)
+
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int i;
 	listint_t *prev;
