@@ -22,7 +22,7 @@ size_t looped_listint_len(const listint_t *head)
 
 	tortoise = head->next;
 	hare = (head->next)->next;
-[I
+
 	while (hare)
 	{
 		if (tortoise == hare)
